@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/logogreen"
+        android:layout_marginLeft="30dp">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/notif"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/baseline_notifications_none_24"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentRight="true">
+    </ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="380dp"
+                android:layout_height="170dp"
+                android:background="@drawable/shape3"
+                android:layout_marginLeft="15dp">
+
+                <TextView
+                    android:id="@+id/user"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="John Christopher Cerita"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp">
+                </TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="02000173455"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_below="@id/user">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/ab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Available Balance"
+                    android:textColor="@color/white"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_below="@id/user">
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/iv"
+                    android:layout_width="150dp"
+                    android:layout_height="70dp"
+                    android:src="@drawable/shape4"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="75dp">
+                </ImageView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱ 0.00"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_alignRight="@id/iv">
+                </TextView>
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="370dp"
+                android:layout_height="100dp"
+                android:orientation="horizontal"
+                android:layout_marginLeft="20dp">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add money"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/baseline_add_circle_outline_24"
+                    android:background="@drawable/shape5"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="17dp">
+                </androidx.appcompat.widget.AppCompatButton>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:layout_width="165dp"
+                    android:layout_height="wrap_content"
+                    android:text="Claim money"
+                    android:textAllCaps="false"
+                    android:drawableLeft="@drawable/baseline_arrow_circle_down_24"
+                    android:background="@drawable/shape5"
+                    android:layout_marginLeft="40dp"
+                    android:layout_marginTop="20dp"
+                    android:paddingLeft="10dp"
+                    android:drawablePadding="5dp"
+                    android:textColor="@color/white"
+                    android:textSize="17dp">
+                </androidx.appcompat.widget.AppCompatButton>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Other Services"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp">
+            </TextView>
+
+            <GridLayout
+                android:layout_width="370dp"
+                android:layout_height="260dp"
+                android:layout_marginLeft="20dp"
+                android:columnCount="3"
+                android:rowCount="2"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray">
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape7"
+                    android:elevation="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/send"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send"
+                        android:layout_marginTop="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold">
+                    </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape7"
+                    android:elevation="10dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/transfer"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Transfer"
+                        android:layout_marginTop="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape7"
+                    android:elevation="10dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/pay"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pay Bills"
+                        android:layout_marginTop="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape7"
+                    android:elevation="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/borrow"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Rewards"
+                        android:layout_marginTop="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape7"
+                    android:elevation="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="25dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/loan"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Loan"
+                        android:layout_marginTop="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold">
+                    </TextView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/shape7"
+                    android:elevation="10dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginLeft="15dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/saving"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="15dp">
+                    </ImageView>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Savings"
+                        android:layout_marginTop="70dp"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold">
+                    </TextView>
+                </RelativeLayout>
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ezPay Offers"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+            <HorizontalScrollView
+                android:layout_width="370dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="20dp"
+                android:fillViewport="true"
+                android:background="@color/gray">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ad1"
+                        android:layout_marginLeft="20dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ad2"
+                        android:layout_marginLeft="35dp">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ad3"
+                        android:layout_marginLeft="35dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/ad4"
+                        android:layout_marginLeft="35dp">
+                    </ImageView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ezPay ezLife!"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="30dp">
+            </TextView>
+
+            <HorizontalScrollView
+                android:layout_width="370dp"
+                android:layout_height="160dp"
+                android:layout_marginLeft="20dp"
+                android:fillViewport="true"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:orientation="horizontal"
+                    android:background="@color/gray">
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ad5"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ad6"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ad7"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ad8"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+                    </ImageView>
+
+                    <ImageView
+                        android:layout_width="190dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/ad9"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+                    </ImageView>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
